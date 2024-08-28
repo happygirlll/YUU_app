@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#F4F4F4"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:id="@+id/AppImage"
+                android:layout_width="172dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/editextdraw"
+                android:clipToOutline="true"
+                android:outlineProvider="background"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_people" />
+
+
+            <TextView
+                android:id="@+id/id_text"
+                android:layout_width="162dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/AppImage"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="5dp"
+                android:text="id"
+                android:textStyle="bold"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/major_text"
+                android:layout_width="161dp"
+                android:layout_height="38dp"
+                android:layout_below="@id/id_text"
+                android:layout_toRightOf="@id/AppImage"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:text="name"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/name_text"
+                android:layout_width="169dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/major_text"
+                android:layout_toRightOf="@id/AppImage"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:text="전공"
+                android:textColor = "#474747"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

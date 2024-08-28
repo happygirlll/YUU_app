@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.InsertActivity"
+    android:layout_margin="10sp"
+    android:background="@drawable/rounded_list">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtwdate"
+        android:text="작성일 "
+        android:padding="10sp"
+        android:textSize="15sp"
+        android:textColor="#C3AB85"/>
+
+    <EditText
+        android:layout_below="@id/txtwdate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="내용을 입력하세요."
+        android:gravity="top"
+        android:padding="10sp"
+        android:textColor="#6C604D"
+        android:textColorHint="#6C604D"
+        android:textSize="17sp"
+        android:id="@+id/edtcontent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/save"
+        app:maxImageSize="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20sp"
+        android:layout_marginRight="20sp"
+        app:backgroundTint="@color/profile_old_tag" />
+</RelativeLayout>

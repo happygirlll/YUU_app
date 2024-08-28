@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".DetailActivity">
+
+        <!--- store 상세정보 !-->
+        <!-- 10 -->
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <!--id-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/detail_id_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_id"
+                android:padding="5dp"/>
+
+            <!--name-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/detail_name_text"
+                android:textSize="20sp"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <!--image-->
+        <ImageView
+            android:id="@+id/AppImage"
+            android:layout_width="match_parent"
+            android:layout_height="219dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/editextdraw"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_people" />
+
+        <View
+            android:background="@color/colorgray"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="2px"
+            />
+
+        <!--major-->
+    <!--info-->
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+    <LinearLayout
+            android:id="@+id/detail_major_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+        android:scrollbars="vertical"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <!--call-->
+            <TextView
+                android:id="@+id/detail_call_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_main"
+                android:textSize="17dp"
+                android:textAlignment="center"
+                android:textColor = "#474747"
+                />
+        </LinearLayout>
+        <!--2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--info-->
+
+
+                <TextView
+                    android:id="@+id/detail_info_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_main"
+                    android:textSize="17sp"
+                    android:textColor="#474747"
+                    android:textAlignment="center"/>
+
+        </LinearLayout>
+    </LinearLayout>

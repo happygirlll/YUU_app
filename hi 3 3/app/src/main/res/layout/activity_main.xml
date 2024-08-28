@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:openDrawer="start">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:src="@drawable/yuu6" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#DFDFDF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:gravity="center"
+            android:text="Menu"
+            android:textSize="12dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/layout_1"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:background="@drawable/rounded_main"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true">
+                <TextView
+                    android:id="@+id/frag_button1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:text="YU 지도"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_2"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:background="@drawable/rounded_main"
+                android:clickable="true">
+
+               <TextView
+                   android:id="@+id/frag_button2_1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:clickable="true"
+                   android:text="YU 캘린더"
+                   android:layout_marginTop="5dp"
+                   android:textSize="16dp" />
+           </LinearLayout>
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:clickable="true">
+       <LinearLayout
+           android:id="@+id/layout_3"
+           android:layout_width="350dp"
+           android:layout_height="45dp"
+           android:layout_marginTop="30dp"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:background="@drawable/rounded_main"
+           android:clickable="true">
+
+
+           <TextView
+               android:id="@+id/frag_button3_1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:clickable="true"
+               android:text="   YU 봇   "
+               android:textSize="16dp" />
+       </LinearLayout>
+
+   </LinearLayout>
+        <View
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#DFDFDF"/>
+</LinearLayout>
+
+</LinearLayout>
+
+   <com.google.android.material.navigation.NavigationView
+       android:id="@+id/nav_view"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_gravity="start"
+       android:fitsSystemWindows="true"
+       app:headerLayout="@layout/nav_header_main"
+       app:menu="@drawable/activity_main_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,20 @@
+<menu  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/home_btn"
+        android:title="홈버튼"
+        app:showAsAction="always"
+        android:icon="@drawable/home"
+        />
+
+    <item android:id="@+id/school_btn"
+        android:title="버튼1"
+        app:showAsAction="always"
+        android:icon="@drawable/school"
+        />
+    <item android:id="@+id/list_btn"
+        android:title="버튼2"
+        app:showAsAction="always"
+        android:icon="@drawable/menu_list"
+        />
+</menu>
